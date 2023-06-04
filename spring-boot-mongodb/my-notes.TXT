@@ -1,17 +1,16 @@
 
-Mongo DB connection için:
-
 *******************************
+Mongo DB connection için:
 
 application.properties içine aşağıdakilerin yazılması gerekiyor.
 spring.data.mongodb.database = mongo-rest
 spring.data.mongo.url = localhost:27017
 
-*********************
+*******************************
 
-Docker ile kurulumda
+Docker ile mongo db kurulumu için
 
-resources-> docker-compose.yml dosyasına gel.
+resources-> docker-compose.yml dosyasına aşağıdakileri yaz.
 
 version: '3.1'
 services:
@@ -21,8 +20,8 @@ services:
     ports:
       - '27017:27017'
 
-//dosyayı düzenledikten sonra bu komutu giriyorsun
+//dosyayı düzenledikten sonra bu komutu giriyorsun :
 docker-compose -f docker-compose.yml up -d
-//image çalıştığını görmek için
+//image çalıştığını görmek için :
 docker ps
 
