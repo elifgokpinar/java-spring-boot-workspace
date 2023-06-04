@@ -9,7 +9,7 @@ import java.util.Optional;
 @Repository
 public interface FlowerRepository  extends MongoRepository<Flower,String> {
 
-   /* @Query("{'flower': ?0}")
+   /* @Query("{'flower': ?0}")*
     Optional<Flower> findByFlower(String flowerName);*/
    Optional<Flower> findByName(String name);
 
