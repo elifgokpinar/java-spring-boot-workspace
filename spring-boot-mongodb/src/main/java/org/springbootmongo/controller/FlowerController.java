@@ -18,7 +18,7 @@ public class FlowerController {
     @Autowired
     private FlowerService flowerService;
 
-    //GET ALL INFO
+    //GET ALL INFO*
     @GetMapping("/flowers")
     public ResponseEntity<List<Flower>>  getAllFlowers(){
         List<Flower> flowers = flowerService.getAllFlowers();
