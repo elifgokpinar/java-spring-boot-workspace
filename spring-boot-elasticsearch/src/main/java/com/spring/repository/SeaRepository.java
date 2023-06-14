@@ -14,6 +14,8 @@ public interface SeaRepository extends ElasticsearchRepository<Sea, String> {
 
     List<Sea>  findByName(String name);
 
+    List<Sea>  findByArea(String area);
+
     List<Sea>  findByNameLikeOrAreaLike(String name, String area);
 
 }
