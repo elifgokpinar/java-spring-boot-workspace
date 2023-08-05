@@ -1,0 +1,25 @@
+1-Resources klasörünün altına docker-compose.yml dosyasını oluştur.
+2-docker-compose.yml dosyası içinde aşağıdakiler yazılmalıdır.
+***Docker image for elastic search*******
+
+version: '3.1'
+services:
+  elasticsearch:
+    image: elasticsearch:7.4.2
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+    environment:
+      - discovery.type=single-node
+
+*****************************************
+3-Docker image'in çalışması için aşağıdaki komut girilir.
+
+docker-compose -f docker-compose.yml up -d
+
+4-docker ps yazarak kontrol edebilirsin.
+
+5-Taracıya gelip localhost:9200 yazıp elasticsearch'ın çalıştığına bakabilirsin.
+
+6-Elastic search repository oluşturduktan sonra Main java dosyasında
+@EnableElasticsearchRepositories annotation'u yazman gerekir.

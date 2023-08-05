@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f98f16ba-066f-47a9-bcdc-81fcd72525dc" name="Changes" comment="spring boot elastic search edit">
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/controller/HospitalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/dto/HospitalDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/entity/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/entity/Hospital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/repository/DoctorRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/repository/HospitalRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/service/IService/HospitalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/service/impl/HospitalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/resources/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-elasticsearch/my-notes.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2R7058DpOuthaA56q3ldLiGiD8J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/elif.gokpinar/OneDrive - DEFACTO PERAKENDE TIC. A.S/Desktop/java-spring-boot-workspace/spring-boot-datajpa-postgresql/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elif.gokpinar\OneDrive - DEFACTO PERAKENDE TIC. A.S\Desktop\java-spring-boot-workspace\spring-boot-datajpa-postgresql\src\main\resources" />
+      <recent name="C:\Users\elif.gokpinar\OneDrive - DEFACTO PERAKENDE TIC. A.S\Desktop\java-spring-boot-workspace\spring-boot-elasticsearch\src\main\java\org\example" />
+      <recent name="C:\Users\elif.gokpinar\OneDrive - DEFACTO PERAKENDE TIC. A.S\Desktop\java-spring-boot-workspace\spring-boot-elasticsearch\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.repository" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="resources.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="spring-boot-datajpa-postgresql/src/main/resources/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="resources.elasticsearch: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="elasticsearch" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="spring-boot-elasticsearch/src/main/resources/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="resources.mongo: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mongo" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="spring-boot-mongodb/src/main/resources/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.resources.db: Compose Deployment" />
+        <item itemvalue="Docker.resources.elasticsearch: Compose Deployment" />
+        <item itemvalue="Docker.resources.mongo: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f98f16ba-066f-47a9-bcdc-81fcd72525dc" name="Changes" comment="" />
+      <created>1686585626030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686585626030</updated>
+    </task>
+    <task id="LOCAL-00001" summary="edit">
+      <created>1686762966336</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686762966336</updated>
+    </task>
+    <task id="LOCAL-00002" summary="spring boot elastic search">
+      <created>1686767417084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686767417084</updated>
+    </task>
+    <task id="LOCAL-00003" summary="spring boot elastic search edit">
+      <created>1686769394301</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686769394301</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="edit" />
+    <MESSAGE value="spring boot elastic search" />
+    <MESSAGE value="spring boot elastic search edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring boot elastic search edit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/spring-boot-datajpa-postgresql/src/main/java/org/example/service/impl/HospitalServiceImpl.java</url>
+          <line>24</line>
+          <properties class="org.example.service.impl.HospitalServiceImpl" method="save">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
